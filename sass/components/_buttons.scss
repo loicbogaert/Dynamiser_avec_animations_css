@@ -1,0 +1,13 @@
+.btn {
+    width: 200px;
+    height: 40px;
+    background: $violet;
+    background: linear-gradient(0deg, $violet 0%, $rose 100%);
+    align-self: center;
+    justify-self: center;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: 200;
+    @include boxshadow;
+}
