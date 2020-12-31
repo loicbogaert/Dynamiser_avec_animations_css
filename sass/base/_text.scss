@@ -8,8 +8,18 @@
 
 .titres {
     font-family: shrikhand;
+    &--center{
+        text-align: center;
+    }
 }
 
-.titres__center {
-    text-align: center;
- }
+h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.soustitre {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}

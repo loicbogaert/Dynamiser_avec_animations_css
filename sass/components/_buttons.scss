@@ -9,5 +9,10 @@
     border: none;
     color: white;
     font-weight: 200;
+    margin-bottom: 50px;
+    margin-top: 15px;
     @include boxshadow;
+    &:hover {
+        background: linear-gradient(0deg,  #bb85fd 0%, #f896dc 100%);
+        }
 }

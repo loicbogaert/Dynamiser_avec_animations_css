@@ -1,5 +1,9 @@
-.heading {
+header {
     display: grid;
     grid-template-columns: repeat(1, 5);
-    grid-auto-rows: minmax(100px auto);
       }
+
+.heading {
+  display: grid;
+  grid-template-columns: repeat(1, 3);
+}
