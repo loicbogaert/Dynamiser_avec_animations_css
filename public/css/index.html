@@ -11,14 +11,18 @@
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header>
 		<img src="img/logo.png" class="logo">
+		<div class="gradiant"></div>
 		<div class="heading greybg">
-			<div class="lieu"><i class="fas fa-map-marker-alt lieu__icone"></i><p class="lieu__text">Paris, Belleville</p></div>
-			<h1 class="titres titres--center">Réservez le menu qui vous convient</h1>
+			<div class="lieu"><i class="fas fa-map-marker-alt lieu__icone"></i><p class="lieu__text bold">Paris, Belleville</p></div>
+			<h1 class="titres--center vbold">Réservez le menu qui vous convient</h1>
 			<h2 class="titres--center soustitre">Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
 			<button class="btn">Explorez nos restaurants</button>
 		</div>
@@ -27,70 +31,84 @@
 <main>
 		<section class="fonctionnement">
 
-			<h3 class="titres">Fonctionnement</h3>	
+			<h3 class="vbold">Fonctionnement</h3>	
 
 			<div class="fonctionnement__étape greybg">
 				<div class="point"><p class="point__txt">1</p></div>
 				<i class="fas fa-mobile-alt logos"></i>
-				<p>Choisissez un restaurant</p>
+				<p class="bold">Choisissez un restaurant</p>
 			</div>
 
 			<div class="fonctionnement__étape greybg">
 				<div class="point"><p class="point__txt">2</p></div>
 				<i class="fas fa-bars logos"></i>
-				<p>Composez votre menu</p>
+				<p class="bold">Composez votre menu</p>
 			</div>
 
 			<div class="fonctionnement__étape greybg">
 				<div class="point"><p class="point__txt">3</p></div>
 				<i class="fas fa-store logos"></i>
-				<p>Dégustez au restaurant</p>
+				<p class="bold">Dégustez au restaurant</p>
 			</div>
+
 		</section>
 
-		<section class="restaurants">
+
+		<section class="restaurant greybg">
+
+			<h3 class="vbold">Restaurants</h3>
+
 			<div class="restaurant__square">
-				
-				<h4>La palette du goût</h4>
-				<p>Ménilmontant</p>
-				<i></i>
+				<div class="restaurant__image resto">
+					<div class="nouveau">
+						Nouveau
+					</div>
+				</div>
+				<a href="#" class="link"><h4>La palette du goût</h4></a>
+				<a href="#" class="link"><p>Ménilmontant</p></a>
+				<i class="far fa-heart"></i>
 			</div>
 
 
 			<div class="restaurant__square">
-				<img src="">
-				<h4>La note enchantée</h4>
-				<p>Charonne</p>
-				<i></i>
+				<div class="restaurant__image resto__2">
+					<div class="nouveau">
+						Nouveau
+					</div>
+				</div>
+				<a href="#" class="link"><h4>La note enchantée</h4></a>
+				<a href="#" class="link"><p>Charonne</p></a>
+				<i class="far fa-heart"></i>
 			</div>
 
 
 			<div class="restaurant__square">
-				<img src="">
-				<h4>A la française</h4>
-				<p>Cité Rouge</p>
-				<i></i>
+				<div class="restaurant__image resto__3">
+				</div>
+				<a href="#" class="link"><h4>A la française</h4></a>
+				<a href="#" class="link"><p>Cité Rouge</p></a>
+				<i class="far fa-heart"></i>
 			</div>
 
 
 			<div class="restaurant__square">
-				<img src="">
-				<h4>Le délice des sens</h4>
-				<p>Folie-Méricourt</p>
-				<i></i>
+				<div class="restaurant__image resto__4">
+				</div>
+				<a href="#" class="link"><h4>Le délice des sens</h4></a>
+				<a href="#" class="link"><p>Folie-Méricourt</p></a>
+				<i class="far fa-heart"></i>
 			</div>
 		</section>
 </main>	
 
 
 <footer>
-	<img src="">
-
-	<ul>
-		<li><i></i>Proposer un restaurant</li>
-		<li><i></i>Devenir partenaire</li>
-		<li>Mentions légales</li>
-		<li>Contact</li>
+	<ul class="footer">
+		<li class="footer__logo"><p class="titres">Ohmyfood</p></li>
+		<a href="#" class="link white"><li class="footer__txt"><i class="fas fa-utensils footer__fas1"></i>Proposer un restaurant</li></a>
+		<a href="#" class="link white"><li class="footer__txt"><i class="fas fa-hands-helping footer__fas2"></i>Devenir partenaire</li></a>
+		<a href="#" class="link white"><li class="footer__txt">Mentions légales</li></a>
+		<a href="#" class="link white"><li class="footer__txt">Contact</li></a>
 	</ul>
 </footer>
 

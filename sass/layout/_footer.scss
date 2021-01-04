@@ -1,0 +1,25 @@
+footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    height: 200px;
+}
+
+
+.footer {
+    margin-left: 20px;
+    list-style: none;
+    &__logo {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__txt {
+        margin-bottom: 7px;
+    }
+    &__fas1 {
+        margin-right: 13px;
+    }
+    &__fas2 {
+        margin-right: 10px;
+        font-size: 13px;
+    }
+}

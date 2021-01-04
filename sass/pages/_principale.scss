@@ -6,13 +6,16 @@
         width: 90%;
         justify-self: center;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        margin-left: 10px;
         height: 70px;
         border-radius: 20px;
         @include boxshadow;
+        &:hover {
+            background-color: rgba(74, 2, 102, 0.151);
+        }
     }
 }
-
 
 .point {
     display: flex;
@@ -31,4 +34,69 @@
 
 .logos {
     margin-right: 7%;
+    color: rgb(99, 99, 99);
+}
+
+.restaurant {
+    display: grid;
+    grid-template-columns: repeat(1, 4);
+    padding-bottom: 50px;
+    margin-top: 30px;
+    &__square {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 270px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        justify-self: center;
+        @include boxshadow;
+    }
+}
+
+.restaurant__image {
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nouveau {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: $bleu;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right:15px;
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    color :green;
+}
+
+.fa-heart {
+    align-self: flex-end;
+    margin-top: -35px;
+    margin-right: 20px;
+    font-size: 25px;
+    &:hover {
+        color: $violet;
+    }
+}
+
+.resto {
+    background-image: url(img/restaurant1.jpg);
+    &__2 {
+        background-image: url(img/restaurant2.jpg)
+    }
+    &__3 {
+        background-image: url(img/restaurant3.jpg)
+    }
+    &__4 {
+        background-image: url(img/restaurant4.jpg)
+    }
 }

@@ -1,6 +1,6 @@
 .btn {
-    width: 200px;
-    height: 40px;
+    width: 225px;
+    height: 50px;
     background: $violet;
     background: linear-gradient(0deg, $violet 0%, $rose 100%);
     align-self: center;
@@ -8,7 +8,7 @@
     border-radius: 30px;
     border: none;
     color: white;
-    font-weight: 200;
+    font-size: 15px;
     margin-bottom: 50px;
     margin-top: 15px;
     @include boxshadow;
