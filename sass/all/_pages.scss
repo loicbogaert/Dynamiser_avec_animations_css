@@ -1,9 +1,47 @@
+    /*Page principale*/
+
+
+    /*header*/
+
+.logo{
+    height: 30px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: center;
+    }
+    
+.lieu {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border: none;
+    background-color:#ececec;
+    justify-content: center;
+    align-items: center;
+    color: rgb(71, 71, 71);
+    &__icone{
+        margin-right: 15px;
+        }
+        &__text {
+        width: 115px;
+        }
+    }
+    
+.gradiant {
+    background: linear-gradient(rgb(185, 185, 185), #ececec);
+    height: 5px;
+    }
+    
+    /*partie fonctionnement*/
+
 .fonctionnement {
     display: grid;
     grid-template-columns: repeat(1, 4);
     &__étape {
         display: flex;
         width: 90%;
+        max-width: 400px;
         justify-self: center;
         align-items: center;
         margin-bottom: 25px;
@@ -37,9 +75,11 @@
     color: rgb(99, 99, 99);
 }
 
+/*parties restaurants*/
+
 .restaurant {
     display: grid;
-    grid-template-columns: repeat(1, 4);
+    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 50px;
     margin-top: 30px;
     &__square {
@@ -52,15 +92,14 @@
         justify-self: center;
         @include boxshadow;
     }
-}
-
-.restaurant__image {
-    height: 200px;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: flex-end;
+        &__image{
+            height: 200px;
+            background-size: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            display: flex;
+            justify-content: flex-end;
+    }
 }
 
 .nouveau {
@@ -99,4 +138,53 @@
     &__4 {
         background-image: url(img/restaurant4.jpg)
     }
+}
+
+
+/*format PC*/
+
+@media all and (min-width: 992px){
+
+    /*Partie fonctionnement*/
+
+.fonctionnement {
+    &__title {
+        margin-left: 0;
+        width: 216px;
+        justify-self: center;
+    }
+}
+
+.logos {
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+
+    /*Partie Restaurants*/
+
+.restaurant {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+        &__title {
+            grid-column: 1/3;
+            margin-left: 3%;
+        }
+        &__square {
+            display: flex;
+            height: 370px;
+        }
+        &__image {
+            height: 300px;
+        }
+    }
+}
+
+
+
+/*format tablette*/
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+
 }

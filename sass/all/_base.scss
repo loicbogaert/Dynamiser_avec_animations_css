@@ -1,3 +1,5 @@
+/*polices / textes*/
+
 * {
     font-family: roboto;
     box-sizing: border-box;
@@ -69,4 +71,35 @@ h4 {
 
 .white {
     color:white;
+}
+
+/*format PC*/
+
+@media all and (min-width: 992px){
+    h1 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 21px;
+        width: 180px;
+    }
+
+    .restaurant__square p {
+        font-size: 19px;
+        width: 130px;
+    }
+
+    .fonctionnement__txt {
+        font-size: 18px;
+    }
+
+    .white {
+        font-size: 20px;
+    }
+
 }

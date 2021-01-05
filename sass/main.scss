@@ -1,8 +1,5 @@
-@import "./util/variables.scss";
-@import "./base/text.scss";
-@import "./components/buttons.scss";
-@import "./layout/footer.scss";
-@import "./components/lieu.scss";
-@import "./components/logo.scss";
-@import "./layout/header.scss";
-@import "./pages/principale.scss";
+@import "./all/util.scss";
+@import "./all/pages.scss";
+@import "./all/layout.scss";
+@import "./all/component.scss";
+@import "./all/base.scss";
