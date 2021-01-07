@@ -163,22 +163,53 @@
 
   /*Partie Restaurants*/
   .restaurant {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
   }
   .restaurant__title {
-    grid-column: 1/3;
-    margin-left: 3%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 150px;
+    justify-self: center;
+    margin-left: 0;
   }
   .restaurant__square {
     display: flex;
     height: 370px;
+    max-width: 800px;
   }
   .restaurant__image {
     height: 300px;
   }
 }
 /*format tablette*/
+@media all and (min-width: 768px) and (max-width: 992px) {
+  /*partie fonctionnement*/
+  .fonctionnement__title {
+    width: 160px;
+    margin-left: 0;
+    justify-self: center;
+  }
+
+  /*partie restaurants*/
+  .restaurant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .restaurant__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 130px;
+    justify-self: center;
+    margin-left: 0;
+  }
+}
 /*header*/
 header {
   display: grid;
@@ -238,7 +269,7 @@ footer {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    width: 200px;
+    width: 240px;
     justify-self: center;
   }
   .footer__1 {
@@ -271,6 +302,59 @@ footer {
   }
 }
 /*format tablette*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer {
+    margin-left: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, 50px);
+  }
+  .footer__fas1 {
+    font-size: 22px;
+    margin-right: 18px;
+  }
+  .footer__fas2 {
+    font-size: 20px;
+  }
+  .footer__logo {
+    font-size: 40px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 240px;
+    justify-self: center;
+  }
+  .footer__1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 240px;
+  }
+  .footer__2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 240px;
+  }
+  .footer__3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 240px;
+  }
+  .footer__4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 240px;
+  }
+}
 /*Skin bouton*/
 .btn {
   width: 225px;
