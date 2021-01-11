@@ -18,80 +18,103 @@
 
     <body>
         <header class="cartehead">
-            <i>img de fleche</i>
-            <img src="img/logo.png" class="logo">
-            <img class="cartehead__img">
+            <div class="cartehead__title">
+                <i class="fas fa-arrow-left cartehead__arrow"></i>
+                <img src="img/logo.png" class="logo cartehead__logo">
+            </div>
+            <img src="img/restaurant2.jpg" class="cartehead__img">
         </header>
 
-    <main class="cartemain">
+    <main class="cartemain greybg">
         <div class="cartemain__head">
-            <h3>Le délice des sens</h3>
-            <i class="far fa-heart"></i>
+            <h3 class="cartemain__title titres">Le délice des sens</h3>
+            <i class="far fa-heart cartemain__icon"></i>
         </div>
 
         <h6>Entrées</h6>
-            <div class="cartemain__entrées">
-                <div class="cartemain__square">
-                    <p>Tatare de thon</p>
-                    <p>Assaisonné au Yuzu</p>
-                    <p>25€</p>
+         <span class="cartemain__underline"></span>
+            <div class="list">
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Tatare de thon</p>
+                        <p class="accompagnement">Assaisonné au Yuzu</p>
+                    </div>
+                    <p class="list__price bold">25€</p>
                 </div>
 
-                <div class="cartemain__square">
-                    <p>Bouchée de homard croustillant</p>
-                    <p>Et sa farandole de petits légumes</p>
-                    <p>35€</p>
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Bouchée de homard croustillant</p>
+                        <p class="accompagnement">Et sa farandole de petits légumes</p>
+                    </div>
+                    <p class="list__price bold">35€</p>
                 </div>
 
-                <div class="cartemain__square">
-                    <p>Velouté de cèpes</p>
-                    <p>Aux truffes</p>
-                    <p>20€</p>
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Velouté de cèpes</p>
+                        <p class="accompagnement">Aux truffes</p>
+                    </div>
+                    <p class="list__price bold">20€</p>
                 </div>
                 </div>
     
         <h6>Plats</h6>
-            <div class="cartemain__plats">
-                <div class="cartemain__square">
-                    <p>Poulet rôti aux herbes de Provence</p>
-                    <p>Et sa crème de truffe</p>
-                    <p>40€</p>
+         <span class="cartemain__underline"></span>
+            <div class="list">
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Poulet rôti aux herbes de Provence</p>
+                        <p class="accompagnement">Et sa crème de truffe</p>
+                    </div>
+                    <p class="list__price bold">40€</p>
                 </div>
 
-                <div class="cartemain__square">
-                    <p>Langouste rôtie</p>
-                    <p>Et ses légumes de saison</p>
-                    <p>35€</p>
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Langouste rôtie</p>
+                        <p class="accompagnement">Et ses légumes de saison</p>
+                    </div>
+                    <p class="list__price bold">35€</p>
                 </div>
 
-                <div class="cartemain__square">
-                    <p>Côte de boeuf Angus</p>
-                    <p>Et sa purée de panais</p>
-                    <p>44€</p>
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Côte de boeuf Angus</p>
+                        <p class="accompagnement">Et sa purée de panais</p>
+                    </div>
+                    <p class="list__price bold">44€</p>
                 </div>
                 </div>
     
         <h6>Desserts</h6>
-            <div class="cartemain__desserts">
-                <div class="cartemain__square">
-                    <p>Farandole de desserts</p>
-                    <p>Du chef</p>
-                    <p>18€</p>
+         <span class="cartemain__underline"></span>
+            <div class="list">
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Farandole de desserts</p>
+                        <p class="accompagnement">Du chef</p>
+                    </div>
+                    <p class="list__price bold">18€</p>
             </div>
 
-                <div class="cartemain__square">
-                    <p>Crème brulée</p>
-                    <p>Revisitée</p>
-                    <p>22€</p>
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Crème brulée</p>
+                        <p class="accompagnement">Revisitée</p>
+                    </div>
+                    <p class="list__price bold">22€</p>
                 </div>
 
-                <div class="cartemain__square">
-                    <p>Tiramisu</p>
-                    <p>À la noisette</p>
-                    <p>23€</p>
+                <div class="list__square">
+                    <div class="list__txt">
+                        <p class="nomplat">Tiramisu</p>
+                        <p class="accompagnement">À la noisette</p>
+                    </div>
+                    <p class="list__price bold">23€</p>
                 </div>
-
-        <button class="btn">Explorez nos restaurants</button>
+            </div>    
+        <button class="btn">Commander</button>
     </main>
 
 <footer>
@@ -104,4 +127,7 @@
 	</ul>
 </footer>
 
+</body>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    data-auto-a11y="true"></script>
 </html>

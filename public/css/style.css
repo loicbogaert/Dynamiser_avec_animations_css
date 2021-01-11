@@ -59,6 +59,11 @@
 .fonctionnement__étape:hover {
   background-color: rgba(74, 2, 102, 0.151);
 }
+.fonctionnement__étape__title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
 
 .point {
   display: flex;
@@ -211,7 +216,7 @@
   }
 }
 /*header*/
-header {
+.header1 {
   display: grid;
   grid-template-columns: repeat(1, 5);
 }
@@ -229,7 +234,7 @@ footer {
 }
 
 .footer {
-  margin-left: 20px;
+  padding-left: 20px;
   list-style: none;
 }
 .footer__logo {
@@ -247,14 +252,96 @@ footer {
   font-size: 13px;
 }
 
+/*Menus à la carte*/
+.cartehead {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -55px;
+}
+.cartehead__title {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+}
+.cartehead__logo {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  align-self: center;
+}
+.cartehead__arrow {
+  margin-left: 25px;
+  align-self: center;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.cartehead__img {
+  z-index: -1;
+  object-fit: cover;
+  height: 300px;
+  width: auto;
+}
+
+.cartemain {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.cartemain__head {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+  width: 95%;
+}
+.cartemain__title {
+  font-size: 20px;
+  margin-top: 25px;
+}
+.cartemain__icon {
+  margin-right: 40px;
+}
+.cartemain__underline {
+  display: block;
+  border: 1px solid #99E2D0;
+  width: 40px;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list__square {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 15px;
+  height: 60px;
+  width: 95%;
+  -webkit-box-shadow: 1px 3px 10px 0px rgba(153, 153, 153, 0.75);
+  -moz-box-shadow: 1px 3px 10px 0px rgba(143, 143, 143, 0.75);
+  box-shadow: 1px 3px 10px 0px rgba(133, 133, 133, 0.75);
+}
+.list__txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10px;
+}
+.list__price {
+  width: 50px;
+}
+
 /*format PC*/
 @media (min-width: 992px) {
   .footer {
-    margin-left: 20px;
+    padding-left: 20px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(50px, 50px);
+    grid-auto-rows: minmax(50px, auto);
   }
   .footer__fas1 {
     font-size: 22px;
@@ -304,7 +391,7 @@ footer {
 /*format tablette*/
 @media (min-width: 768px) and (max-width: 992px) {
   .footer {
-    margin-left: 20px;
+    padding-left: 20px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -417,13 +504,6 @@ h1 {
   color: #494949;
 }
 
-h3 {
-  font-size: 20px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
 h4 {
   font-size: 18px;
   margin-top: 10px;
@@ -448,6 +528,24 @@ h4 {
 
 .white {
   color: white;
+}
+
+h6 {
+  font-size: 18px;
+  padding-left: 20px;
+  margin-top: 35px;
+}
+
+/*partie menus à la carte*/
+.nomplat {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.accompagnement {
+  padding-top: 3px;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 /*format PC*/

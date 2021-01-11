@@ -40,13 +40,6 @@ h1 {
 }
 
 
-h3 {
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
 h4 {
     font-size: 18px;
     margin-top: 10px;
@@ -71,6 +64,25 @@ h4 {
 
 .white {
     color:white;
+}
+
+h6 {
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 35px;
+}
+
+/*partie menus à la carte*/
+
+.nomplat {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.accompagnement {
+    padding-top: 3px;
+    font-size: 16px;
+    font-weight: lighter;
 }
 
 /*format PC*/

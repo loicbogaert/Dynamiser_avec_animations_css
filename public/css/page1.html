@@ -18,80 +18,105 @@
 
 <body>
     <header class="cartehead">
-        <i>img de fleche</i>
-        <img src="img/logo.png" class="logo">
-        <img class="cartehead__img">
+        <div class="cartehead__title">
+            <i class="fas fa-arrow-left cartehead__arrow"></i>
+            <img src="img/logo.png" class="logo cartehead__logo">
+        </div>
+        <img src="img/restaurant1.jpg" class="cartehead__img">
     </header>
 
-    <main class="cartemain">
-        <div class="cartemain__head">
-            <h3>La palette du goût</h3>
-            <i class="far fa-heart"></i>
-        </div>
+<main class="cartemain greybg">
+    <div class="cartemain__head">
+        <h3 class="cartemain__title titres">La palette du goût</h3>
+        <i class="far fa-heart cartemain__icon"></i>
+    </div>
 
     <h6>Entrées</h6>
-         <div class="cartemain__entrées">
-            <div class="cartemain__square">
-                <p>Fricassée d'escargots</p>
-                <p>Au piment d'espelette</p>
-                <p>25€</p>
+    <span class="cartemain__underline"></span>
+        <div class="list">
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Fricassée d'escargots</p>
+                    <p class="accompagnement">Au piment d'espelette</p>
+                </div>
+                <p class="list__price bold">25€</p>
+                
             </div>
 
-            <div class="cartemain__square">
-                <p>Foie gras de canard mi-cuit</p>
-                <p>Et ses copeaux de truffe noire</p>
-                <p>35€</p>
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Foie gras de canard mi-cuit</p>
+                    <p class="accompagnement">Et ses copeaux de truffe noire</p>
+                </div>
+                <p class="list__price bold">35€</p>
+                
             </div>
 
-            <div class="cartemain__square">
-                <p>Oeuf au plat</p>
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-                <p>20€</p>
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Oeuf au plat</p>
+                    <p class="accompagnement">Assaisonné à la truffe sur lit de caviar</p>
+                </div>
+                <p class="list__price bold">20€</p> 
             </div>
         </div>
 
     <h6>Plats</h6>
-        <div class="cartemain__plats">
-            <div class="cartemain__square">
-                <p>Filet de boeuf aux herbes</p>
-                <p>Accompagné de sa ribambelle de légumes</p>
-                <p>40€</p>
+    <span class="cartemain__underline"></span>
+        <div class="list">
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Filet de boeuf aux herbes</p>
+                    <p class="accompagnement">Accompagné de sa ribambelle de légumes</p>
+                </div>
+                <p class="list__price bold">40€</p>
             </div>
 
-            <div class="cartemain__square">
-                <p>Parmentier de queue de boeuf</p>
-                <p>À la truffe noire sur sa purée de panais</p>
-                <p>35€</p>
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Parmentier de queue de boeuf</p>
+                    <p class="accompagnement">À la truffe noire sur sa purée de panais</p>
+                </div>
+                <p class="list__price bold">35€</p>  
             </div>
 
-            <div class="cartemain__square">
-                <p>Filet de turbot</p>
-                <p>Aux agrumes</p>
-                <p>44€</p>
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Filet de turbot</p>
+                    <p class="accompagnement">Aux agrumes</p>
+                </div>
+                <p class="list__price bold">44€</p> 
             </div>
         </div>
 
     <h6>Desserts</h6>
-        <div class="cartemain__desserts">
-            <div class="cartemain__square">
-                <p>Paris-Brest</p>
-                <p>Revisité</p>
-                <p>18€</p>
+    <div class="cartemain__underline"></div>
+        <div class="list">
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Paris-Brest</p>
+                    <p class="accompagnement">Revisité</p>
+                </div>
+                <p class="list__price bold">18€</p>
             </div>
 
-            <div class="cartemain__square">
-                <p>Macaron au chocolat d'exception</p>
-                <p>Et glace à la vanille de Madagascar</p>
-                <p>22€</p>
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Macaron au chocolat d'exception</p>
+                    <p class="accompagnement">Et glace à la vanille de Madagascar</p>
+                </div>
+                <p class="list__price bold">22€</p>
             </div>
 
-            <div class="cartemain__square">
-                <p>Mousse au chocolat</p>
-                <p>Au piment d'Espelette et à la truffe noire</p>
-                <p></p>
+            <div class="list__square">
+                <div class="list__txt">
+                    <p class="nomplat">Mousse au chocolat</p>
+                    <p class="accompagnement">Au piment d'Espelette et à la truffe noire</p>
+                </div>
+                <p class="list__price bold">23€</p>
             </div>
-
-        <button class="btn">Explorez nos restaurants</button>
+        </div>
+        <button class="btn">Commander</button>
     </main> 
 
     <footer>
@@ -104,5 +129,8 @@
 	    </ul>
     </footer>
 
-    </html>
 </body>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    data-auto-a11y="true"></script>
+
+</html>
