@@ -16,7 +16,7 @@
     flex-direction: row;
     height: 50px;
     border: none;
-    background-color:#ececec;
+    background-color:#e0e0e0;
     justify-content: center;
     align-items: center;
     color: rgb(71, 71, 71);
@@ -29,7 +29,7 @@
     }
     
 .gradiant {
-    background: linear-gradient(rgb(185, 185, 185), #ececec);
+    background: linear-gradient(rgb(185, 185, 185), #e0e0e0);
     height: 5px;
     }
     
@@ -38,25 +38,26 @@
 .fonctionnement {
     display: grid;
     grid-template-columns: repeat(1, 4);
-    &__étape {
-        display: flex;
-        width: 90%;
-        max-width: 400px;
-        justify-self: center;
-        align-items: center;
-        margin-bottom: 25px;
-        margin-left: 10px;
-        height: 70px;
-        border-radius: 20px;
-        @include boxshadow;
-        &:hover {
-            background-color: rgba(74, 2, 102, 0.151);
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+        &__étape {
+            display: flex;
+            width: 90%;
+            max-width: 400px;
+            justify-self: center;
+            align-items: center;
+            margin-bottom: 25px;
+            margin-left: 10px;
+            height: 70px;
+            border-radius: 20px;
+            @include boxshadow;
+            &:hover {
+                background-color: rgba(74, 2, 102, 0.151);
         }
-            &__title {
-                margin-top: 50px;
-                margin-bottom: 20px;
-                font-size: 20px;
-            }
     }
 }
 
@@ -97,14 +98,25 @@
         justify-self: center;
         @include boxshadow;
     }
-        &__image{
-            height: 200px;
-            background-size: cover;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+        &__link {
             display: flex;
-            justify-content: flex-end;
-    }
+            flex-direction: column;
+            text-decoration: none;
+            color: black;
+        }
+            &__image{
+                height: 200px;
+                background-size: cover;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                display: flex;
+                justify-content: flex-end;
+        }
+                &__title {
+                    padding-top: 50px;
+                    padding-bottom: 20px;
+                    padding-left: 22px;
+                }
 }
 
 .nouveau {
@@ -123,14 +135,22 @@
 }
 
 .fa-heart {
+    z-index: 10;
     align-self: flex-end;
     margin-top: -35px;
     margin-right: 20px;
     font-size: 25px;
-    &:hover {
-        color: $violet;
-    }
+    stroke:black;
+    stroke-width: 20px;
+    color: white;
 }
+
+.fa-heart:hover {
+    color: $violet;
+    stroke-width: 0;
+}
+
+
 
 .resto {
     background-image: url(img/restaurant1.jpg);
@@ -155,8 +175,9 @@
 .fonctionnement {
     &__title {
         margin-left: 0;
-        width: 216px;
+        width: 210px;
         justify-self: center;
+        font-size: 26px;
     }
 }
 
@@ -178,9 +199,8 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2;
-            width: 150px;
+            width: 190px;
             justify-self: center;
-            margin-left: 0;
         }
         &__square {
             display: flex;

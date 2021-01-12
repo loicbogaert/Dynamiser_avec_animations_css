@@ -2,7 +2,7 @@
 /*Variables et mixines*/
 /*fond gris du site*/
 .greybg {
-  background-color: #f8f8f8;
+  background-color: #ececec;
 }
 
 /*Page principale*/
@@ -20,7 +20,7 @@
   flex-direction: row;
   height: 50px;
   border: none;
-  background-color: #ececec;
+  background-color: #e0e0e0;
   justify-content: center;
   align-items: center;
   color: #474747;
@@ -33,7 +33,7 @@
 }
 
 .gradiant {
-  background: linear-gradient(#b9b9b9, #ececec);
+  background: linear-gradient(#b9b9b9, #e0e0e0);
   height: 5px;
 }
 
@@ -41,6 +41,12 @@
 .fonctionnement {
   display: grid;
   grid-template-columns: repeat(1, 4);
+}
+.fonctionnement__title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 20px;
 }
 .fonctionnement__étape {
   display: flex;
@@ -58,11 +64,6 @@
 }
 .fonctionnement__étape:hover {
   background-color: rgba(74, 2, 102, 0.151);
-}
-.fonctionnement__étape__title {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 20px;
 }
 
 .point {
@@ -104,6 +105,12 @@
   -moz-box-shadow: 1px 3px 10px 0px rgba(143, 143, 143, 0.75);
   box-shadow: 1px 3px 10px 0px rgba(133, 133, 133, 0.75);
 }
+.restaurant__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
 .restaurant__image {
   height: 200px;
   background-size: cover;
@@ -111,6 +118,11 @@
   border-top-right-radius: 20px;
   display: flex;
   justify-content: flex-end;
+}
+.restaurant__title {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 22px;
 }
 
 .nouveau {
@@ -129,13 +141,19 @@
 }
 
 .fa-heart {
+  z-index: 10;
   align-self: flex-end;
   margin-top: -35px;
   margin-right: 20px;
   font-size: 25px;
+  stroke: black;
+  stroke-width: 20px;
+  color: white;
 }
+
 .fa-heart:hover {
   color: #9356DC;
+  stroke-width: 0;
 }
 
 .resto {
@@ -156,8 +174,9 @@
   /*Partie fonctionnement*/
   .fonctionnement__title {
     margin-left: 0;
-    width: 216px;
+    width: 210px;
     justify-self: center;
+    font-size: 26px;
   }
 
   .logos {
@@ -177,9 +196,8 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    width: 150px;
+    width: 190px;
     justify-self: center;
-    margin-left: 0;
   }
   .restaurant__square {
     display: flex;
@@ -283,6 +301,8 @@ footer {
 .cartemain {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .cartemain__head {
   display: flex;
@@ -291,7 +311,7 @@ footer {
   width: 95%;
 }
 .cartemain__title {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 25px;
 }
 .cartemain__icon {
@@ -318,7 +338,7 @@ footer {
   background-color: white;
   border-radius: 15px;
   margin-top: 15px;
-  height: 60px;
+  height: 65px;
   width: 95%;
   -webkit-box-shadow: 1px 3px 10px 0px rgba(153, 153, 153, 0.75);
   -moz-box-shadow: 1px 3px 10px 0px rgba(143, 143, 143, 0.75);
@@ -444,24 +464,34 @@ footer {
 }
 /*Skin bouton*/
 .btn {
-  width: 225px;
-  height: 50px;
   background: #9356DC;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  align-self: center;
-  justify-self: center;
   border-radius: 30px;
   border: none;
   color: white;
-  font-size: 15px;
-  margin-bottom: 50px;
-  margin-top: 15px;
   -webkit-box-shadow: 1px 3px 10px 0px rgba(153, 153, 153, 0.75);
   -moz-box-shadow: 1px 3px 10px 0px rgba(143, 143, 143, 0.75);
   box-shadow: 1px 3px 10px 0px rgba(133, 133, 133, 0.75);
 }
 .btn:hover {
   background: linear-gradient(0deg, #bb85fd 0%, #f896dc 100%);
+}
+.btn__home {
+  width: 225px;
+  height: 50px;
+  align-self: center;
+  justify-self: center;
+  font-size: 15px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.btn__menu {
+  width: 180px;
+  height: 45px;
+  margin-top: 45px;
+  margin-bottom: 80px;
+  align-self: center;
+  font-size: 16px;
 }
 
 /*polices / textes*/
@@ -519,7 +549,6 @@ h4 {
 }
 
 .link {
-  color: black;
   text-decoration: none;
 }
 .link:hover {

@@ -2,20 +2,30 @@
 /*Skin bouton*/
 
 .btn {
-    width: 225px;
-    height: 50px;
     background: $violet;
     background: linear-gradient(0deg, $violet 0%, $rose 100%);
-    align-self: center;
-    justify-self: center;
     border-radius: 30px;
     border: none;
     color: white;
-    font-size: 15px;
-    margin-bottom: 50px;
-    margin-top: 15px;
     @include boxshadow;
     &:hover {
         background: linear-gradient(0deg,  #bb85fd 0%, #f896dc 100%);
         }
+        &__home {
+            width: 225px;
+            height: 50px;
+            align-self: center;
+            justify-self: center;
+            font-size: 15px;
+            margin-bottom: 50px;
+            margin-top: 15px;
+        }
+            &__menu {
+                width: 180px;
+                height: 45px;
+                margin-top: 45px;
+                margin-bottom: 80px;
+                align-self: center;
+                font-size: 16px;
+            }
 }
