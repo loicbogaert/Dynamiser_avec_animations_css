@@ -110,6 +110,7 @@ footer {
         margin-top: 15px;
         height: 65px;
         width: 95%;
+        max-width: 600px;
         @include boxshadow;
     }
         &__txt{
@@ -121,6 +122,13 @@ footer {
             &__price {
                 width: 50px;
             }
+                &__title {
+                    max-width: 600px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-self : center;
+                    align-self: center;
+                }
 }
 
 /*format PC*/
@@ -146,8 +154,6 @@ footer {
            display: flex;
            flex-direction: column;
            max-width: 450px;
-           justify-self: center;
-           align-self: center;
         }
         &__square {
             width: 95%;
@@ -263,6 +269,18 @@ footer {
             grid-row-start: 4;
             grid-row-end: 5;
             width: 240px;
+        }
+    }
+
+    .list {
+        &__square {
+            max-width: 450px;
+        }
+            &__title {
+                display: flex;
+                flex-direction: column;
+                width: 15%;
+                align-self: center;
         }
     }
 }
