@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/loicbogaert/ohmyfood/issues"
   },
-  "homepage": "https://github.com/loicbogaert/ohmyfood#readme",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1"
-  }
+  "homepage": "https://github.com/loicbogaert/ohmyfood#readme"
 }
