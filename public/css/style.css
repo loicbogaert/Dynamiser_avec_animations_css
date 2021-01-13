@@ -140,20 +140,10 @@
   color: green;
 }
 
-.fa-heart {
-  z-index: 10;
+.heart {
   align-self: flex-end;
   margin-top: -35px;
   margin-right: 20px;
-  font-size: 25px;
-  stroke: black;
-  stroke-width: 20px;
-  color: white;
-}
-
-.fa-heart:hover {
-  color: #9356DC;
-  stroke-width: 0;
 }
 
 .resto {
@@ -307,15 +297,16 @@ footer {
 .cartemain__head {
   display: flex;
   flex-direction: row;
-  margin-left: 25px;
-  width: 95%;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: center;
 }
 .cartemain__title {
   font-size: 25px;
   margin-top: 25px;
 }
 .cartemain__icon {
-  margin-right: 40px;
+  margin-top: 30px;
 }
 .cartemain__underline {
   display: block;
@@ -329,12 +320,12 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .list__square {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-self: center;
   background-color: white;
   border-radius: 15px;
   margin-top: 15px;
@@ -356,6 +347,31 @@ footer {
 
 /*format PC*/
 @media (min-width: 992px) {
+  /*Main (menus)*/
+  .cartemain__title {
+    text-align: center;
+  }
+
+  .list__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .list__title {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    justify-self: center;
+    align-self: center;
+  }
+  .list__square {
+    width: 95%;
+    max-width: 450px;
+    align-self: center;
+  }
+
+  /*Bas de page*/
   .footer {
     padding-left: 20px;
     display: grid;
@@ -492,6 +508,19 @@ footer {
   margin-bottom: 80px;
   align-self: center;
   font-size: 16px;
+}
+
+/*Icone like*/
+.fa-heart {
+  font-size: 25px;
+  stroke: black;
+  stroke-width: 20px;
+  color: white;
+}
+
+.fa-heart:hover {
+  color: #9356DC;
+  stroke-width: 0;
 }
 
 /*polices / textes*/

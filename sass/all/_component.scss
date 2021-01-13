@@ -29,3 +29,18 @@
                 font-size: 16px;
             }
 }
+
+    /*Icone like*/
+
+ .fa-heart {
+    font-size: 25px;
+    stroke:black;
+    stroke-width: 20px;
+    color: white;
+ }
+
+ .fa-heart:hover {
+    color: $violet;
+    stroke-width: 0;
+}
+

@@ -134,22 +134,11 @@
     color :green;
 }
 
-.fa-heart {
-    z-index: 10;
+.heart {
     align-self: flex-end;
     margin-top: -35px;
     margin-right: 20px;
-    font-size: 25px;
-    stroke:black;
-    stroke-width: 20px;
-    color: white;
 }
-
-.fa-heart:hover {
-    color: $violet;
-    stroke-width: 0;
-}
-
 
 
 .resto {
