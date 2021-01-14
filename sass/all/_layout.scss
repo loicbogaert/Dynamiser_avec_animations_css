@@ -29,6 +29,7 @@ footer {
     }
     &__txt {
         margin-bottom: 7px;
+        width: 110%;
     }
     &__fas1 {
         margin-right: 13px;
@@ -54,11 +55,21 @@ footer {
             grid-column-start: 1;
             align-self: center;
     }
-            &__arrow {
-                margin-left: 25px;
-                align-self: center;
+            &__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
                 grid-column-start: 1;
                 grid-row-start: 1;
+                align-self: center;
+                margin-left: 25px;
+                color: black;
+                &:hover {
+                    color: $violet;
+                    font-size: 20px;
+                }
             }
                 &__img {
                     z-index: -1;
@@ -67,6 +78,7 @@ footer {
                     width: auto;
                 }
 }
+
 
 .cartemain {
     border-top-left-radius: 40px;

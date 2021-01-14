@@ -42,7 +42,7 @@
         margin-top: 50px;
         margin-bottom: 20px;
         margin-left: 20px;
-        font-size: 20px;
+        font-size: 22px;
     }
         &__étape {
             display: flex;
@@ -55,10 +55,14 @@
             height: 70px;
             border-radius: 20px;
             @include boxshadow;
-            &:hover {
-                background-color: rgba(74, 2, 102, 0.151);
-        }
     }
+            &__logo {
+                margin-right: 7%;
+                color: rgb(99, 99, 99);
+    }
+                &__pink {
+                    color:$violet;
+                }
 }
 
 .point {
@@ -74,11 +78,6 @@
     &__txt {
         text-align: center;
     }
-}
-
-.logos {
-    margin-right: 7%;
-    color: rgb(99, 99, 99);
 }
 
 /*parties restaurants*/
