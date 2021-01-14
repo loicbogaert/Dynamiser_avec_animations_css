@@ -30,6 +30,14 @@
             }
 }
 
+/*retrait de l'outline*/
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
     /*Icone like*/
 

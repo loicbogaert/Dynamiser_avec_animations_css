@@ -541,6 +541,14 @@ footer {
   font-size: 16px;
 }
 
+/*retrait de l'outline*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 /*Icone like*/
 .fa-heart {
   font-size: 25px;
