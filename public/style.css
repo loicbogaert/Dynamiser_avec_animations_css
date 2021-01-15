@@ -51,6 +51,7 @@
   margin-bottom: 20px;
   margin-left: 20px;
   font-size: 22px;
+  width: 200px;
 }
 .fonctionnement__étape {
   display: flex;
@@ -242,20 +243,21 @@
 footer {
   background-color: #313131;
   color: white;
-  height: 200px;
+  height: 230px;
 }
 
 .footer {
+  padding-top: 30px;
   padding-left: 20px;
   list-style: none;
 }
 .footer__logo {
-  padding-top: 20px;
   margin-bottom: 20px;
 }
 .footer__txt {
-  margin-bottom: 7px;
-  width: 110%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100%;
 }
 .footer__fas1 {
   margin-right: 13px;
@@ -394,11 +396,16 @@ footer {
 
   /*Bas de page*/
   .footer {
+    padding-top: 0;
     padding-left: 20px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(50px, auto);
+  }
+  .footer__txt {
+    width: 110%;
+    margin-top: 18px;
   }
   .footer__fas1 {
     font-size: 22px;
@@ -408,6 +415,7 @@ footer {
     font-size: 20px;
   }
   .footer__logo {
+    padding-top: 30px;
     font-size: 40px;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -448,6 +456,7 @@ footer {
 /*format tablette*/
 @media (min-width: 768px) and (max-width: 992px) {
   .footer {
+    padding-top: 15px;
     padding-left: 20px;
     display: grid;
     align-items: center;
@@ -462,6 +471,7 @@ footer {
     font-size: 20px;
   }
   .footer__logo {
+    padding-top: 30px;
     font-size: 40px;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -516,11 +526,13 @@ footer {
   border-radius: 30px;
   border: none;
   color: white;
+  transition: transform 400ms;
   -webkit-box-shadow: 1px 3px 10px 0px rgba(153, 153, 153, 0.75);
   -moz-box-shadow: 1px 3px 10px 0px rgba(143, 143, 143, 0.75);
   box-shadow: 1px 3px 10px 0px rgba(133, 133, 133, 0.75);
 }
 .btn:hover {
+  transform: scale(1.15);
   background: linear-gradient(0deg, #bb85fd 0%, #f896dc 100%);
 }
 .btn__home {
@@ -558,7 +570,9 @@ button:focus {
 }
 
 .fa-heart:hover {
-  color: #9356DC;
+  background: -webkit-linear-gradient(#c01515, #047de0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   stroke-width: 0;
 }
 

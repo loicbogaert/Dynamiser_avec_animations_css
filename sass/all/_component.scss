@@ -7,8 +7,10 @@
     border-radius: 30px;
     border: none;
     color: white;
+    transition: transform 400ms;
     @include boxshadow;
     &:hover {
+        transform: scale(1.15);
         background: linear-gradient(0deg,  #bb85fd 0%, #f896dc 100%);
         }
         &__home {
@@ -49,7 +51,9 @@ button:focus {
  }
 
  .fa-heart:hover {
-    color: $violet;
+    background: -webkit-linear-gradient(rgb(192, 21, 21), rgb(4, 125, 224));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     stroke-width: 0;
 }
 
