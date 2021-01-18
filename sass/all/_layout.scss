@@ -19,13 +19,14 @@ footer {
 }
 
 .footer {
+    height: 275px;
     color: white;
     background-color: rgb(49, 49, 49);
-    padding-top: 30px;
+    padding-top: 40px;
     padding-left: 20px;
     list-style: none;
     &__logo {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     &__txt {
         margin-bottom: 15px;
@@ -98,7 +99,7 @@ footer {
             margin-top: 25px;
     }
                 &__icon {
-                    margin-top: 30px;
+                  padding-top: 8px;
                 }
                     &__underline {
                     display: block;
@@ -151,17 +152,16 @@ footer {
     /*Main (menus)*/
 
     .cartehead {
-            margin-bottom: -35px;
-        &__img {
-            height: 400px;
-        }
+        margin-bottom: -35px;
+            &__img {
+                height: 400px;
+            }
     }
 
     .cartemain {
         &__title {
             text-align: center;
             margin-top: 25px;
-            margin-bottom: 20px;
         }
     }
 
@@ -169,6 +169,7 @@ footer {
      display: flex;
      flex-direction: row;
      align-items: center;
+     padding-top: 20px;
     }
 
     .list {

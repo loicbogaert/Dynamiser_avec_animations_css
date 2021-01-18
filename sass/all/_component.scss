@@ -50,11 +50,20 @@ button:focus {
     color: white;
  }
 
- .fa-heart:hover {
-    background: -webkit-linear-gradient(rgb(192, 21, 21), rgb(4, 125, 224));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    stroke-width: 0;
+ .my-icon {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: auto;
+    height: 40px;
+    width: 50px;
+    margin-top:-35px ;
+    margin-right: 15px;
+}
+
+.my-icon:hover svg * {
+   fill: url(#lgrad);
+   stroke-width: 0;
 }
 
 
@@ -67,5 +76,9 @@ button:focus {
             width: 230px;
             height: 55px;
         }
+    }
+
+    .fa-heart{
+        font-size: 30px;
     }
 }

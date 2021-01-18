@@ -129,6 +129,11 @@
   padding-left: 22px;
 }
 
+.my-icon {
+  margin-top: -40px;
+  margin-right: 30px;
+}
+
 .nouveau {
   display: flex;
   align-content: center;
@@ -142,12 +147,6 @@
   color: white;
   font-weight: bold;
   color: green;
-}
-
-.heart {
-  align-self: flex-end;
-  margin-top: -35px;
-  margin-right: 20px;
 }
 
 .resto {
@@ -246,14 +245,15 @@ footer {
 }
 
 .footer {
+  height: 275px;
   color: white;
   background-color: #313131;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-left: 20px;
   list-style: none;
 }
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .footer__txt {
   margin-bottom: 15px;
@@ -324,7 +324,7 @@ footer {
   margin-top: 25px;
 }
 .cartemain__icon {
-  margin-top: 30px;
+  padding-top: 8px;
 }
 .cartemain__underline {
   display: block;
@@ -384,13 +384,13 @@ footer {
   .cartemain__title {
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 20px;
   }
 
   .list__flex {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 20px;
   }
 
   .list {
@@ -516,10 +516,19 @@ button:focus {
   color: white;
 }
 
-.fa-heart:hover {
-  background: -webkit-linear-gradient(#c01515, #047de0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.my-icon {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  width: auto;
+  height: 40px;
+  width: 50px;
+  margin-top: -35px;
+  margin-right: 15px;
+}
+
+.my-icon:hover svg * {
+  fill: url(#lgrad);
   stroke-width: 0;
 }
 
@@ -529,6 +538,10 @@ button:focus {
     margin-bottom: 105px;
     width: 230px;
     height: 55px;
+  }
+
+  .fa-heart {
+    font-size: 30px;
   }
 }
 /*polices / textes*/
