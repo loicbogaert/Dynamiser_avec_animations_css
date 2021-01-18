@@ -373,8 +373,17 @@ footer {
 /*format PC*/
 @media (min-width: 992px) {
   /*Main (menus)*/
+  .cartehead {
+    margin-bottom: -35px;
+  }
+  .cartehead__img {
+    height: 400px;
+  }
+
   .cartemain__title {
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
   }
 
   .list__flex {
@@ -383,6 +392,9 @@ footer {
     align-items: center;
   }
 
+  .list {
+    margin-bottom: 40px;
+  }
   .list__title {
     display: flex;
     flex-direction: column;
@@ -576,6 +588,14 @@ button:focus {
   stroke-width: 0;
 }
 
+/*PC*/
+@media (min-width: 992px) {
+  .btn__menu {
+    margin-bottom: 105px;
+    width: 230px;
+    height: 55px;
+  }
+}
 /*polices / textes*/
 * {
   font-family: roboto;
