@@ -125,6 +125,7 @@ footer {
         height: 65px;
         width: 95%;
         max-width: 600px;
+        overflow: hidden;
         @include boxshadow;
     }
         &__txt{
@@ -132,6 +133,9 @@ footer {
             flex-direction: column;
             width: 100%;
             padding-left: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
             &__price {
                 width: 50px;
@@ -143,7 +147,48 @@ footer {
                     justify-self : center;
                     align-self: center;
                 }
+                    &__green-square {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transform: translateX(100px);
+                        transition-property: transform;
+                        transition-duration: 750ms;
+                        width: 100px;
+                        height: 65px;
+                        margin-left: -90px;
+                        background-color: $bleu;
+                    }
+            }
+            
+.mylist {
+ &:hover &__square {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transform: translateX(0px);
+    }
+            &__check {
+                font-size: 24px;
+                color: white;
+                transform: rotateZ(360deg);
+                transition-property: transform;
+                transition-duration: 750ms;
+            }
+                &:hover &__check {
+                    transform: rotateZ(0deg);
+
+                }
+                &__price {
+                    transform: translateX(0px);
+                    transition-property: transform;
+                    transition-duration: 750ms;
+                }
+                    &:hover &__price {
+                        transform: translateX(-90px);
+                        margin-left: 100px;
+                    }
 }
+
 
 /*format PC*/
 
@@ -181,10 +226,36 @@ footer {
         }
             &__square {
                 width: 95%;
-                max-width: 450px;
+                max-width: 300px;
                 align-self: center;
         }
     }
+
+    /*Fix bug d'élargissement et entrecoupement des divs*/
+
+    @media (min-width: 1070px) {
+        .list {
+            &__square {
+                max-width: 350px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        .list {
+            &__square {
+                max-width: 400px;
+            }
+        }
+    }
+
+    @media (min-width: 1365px) {
+        .list {
+            &__square {
+                max-width: 450px;
+            }
+        }
+    }
+
 
     /*Bas de page*/
 
@@ -211,6 +282,11 @@ footer {
                         }
 }
 }
+
+/*Ecrans très larges*/
+
+
+
 /*format tablette*/
 
 @media (min-width: 768px) and (max-width: 992px) {

@@ -350,6 +350,7 @@ footer {
   height: 65px;
   width: 95%;
   max-width: 600px;
+  overflow: hidden;
   -webkit-box-shadow: 1px 3px 10px 0px rgba(153, 153, 153, 0.75);
   -moz-box-shadow: 1px 3px 10px 0px rgba(143, 143, 143, 0.75);
   box-shadow: 1px 3px 10px 0px rgba(133, 133, 133, 0.75);
@@ -359,6 +360,9 @@ footer {
   flex-direction: column;
   width: 100%;
   padding-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .list__price {
   width: 50px;
@@ -369,6 +373,43 @@ footer {
   flex-direction: column;
   justify-self: center;
   align-self: center;
+}
+.list__green-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100px);
+  transition-property: transform;
+  transition-duration: 750ms;
+  width: 100px;
+  height: 65px;
+  margin-left: -90px;
+  background-color: #99E2D0;
+}
+
+.mylist:hover .mylist__square {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: translateX(0px);
+}
+.mylist__check {
+  font-size: 24px;
+  color: white;
+  transform: rotateZ(360deg);
+  transition-property: transform;
+  transition-duration: 750ms;
+}
+.mylist:hover .mylist__check {
+  transform: rotateZ(0deg);
+}
+.mylist__price {
+  transform: translateX(0px);
+  transition-property: transform;
+  transition-duration: 750ms;
+}
+.mylist:hover .mylist__price {
+  transform: translateX(-90px);
+  margin-left: 100px;
 }
 
 /*format PC*/
@@ -403,11 +444,29 @@ footer {
   }
   .list__square {
     width: 95%;
-    max-width: 450px;
+    max-width: 300px;
     align-self: center;
   }
 
+  /*Fix bug d'élargissement et entrecoupement des divs*/
   /*Bas de page*/
+}
+@media (min-width: 992px) and (min-width: 1070px) {
+  .list__square {
+    max-width: 350px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .list__square {
+    max-width: 400px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1365px) {
+  .list__square {
+    max-width: 450px;
+  }
+}
+@media (min-width: 992px) {
   .footer {
     padding-left: 0;
     padding-top: 10px;
@@ -431,6 +490,7 @@ footer {
     font-size: 18px;
   }
 }
+/*Ecrans très larges*/
 /*format tablette*/
 @media (min-width: 768px) and (max-width: 992px) {
   .footer {
@@ -525,6 +585,11 @@ button:focus {
   width: 50px;
   margin-top: -35px;
   margin-right: 15px;
+  transform: scale(1);
+  transition: transform 550ms ease-out 100ms;
+}
+.my-icon:hover {
+  transform: scale(1.5);
 }
 
 .my-icon:hover svg * {
@@ -618,12 +683,18 @@ h6 {
 .nomplat {
   font-size: 17px;
   font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .accompagnement {
   padding-top: 3px;
   font-size: 16px;
   font-weight: lighter;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /*format PC*/
