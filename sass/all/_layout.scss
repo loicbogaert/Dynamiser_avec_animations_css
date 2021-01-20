@@ -158,6 +158,10 @@ footer {
                         height: 65px;
                         margin-left: -90px;
                         background-color: $bleu;
+                        border: none;
+                            &:active {
+                                background-color: rgb(0, 255, 255);
+                            }
                     }
             }
             

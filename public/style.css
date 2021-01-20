@@ -385,6 +385,10 @@ footer {
   height: 65px;
   margin-left: -90px;
   background-color: #99E2D0;
+  border: none;
+}
+.list__green-square:active {
+  background-color: aqua;
 }
 
 .mylist:hover .mylist__square {
