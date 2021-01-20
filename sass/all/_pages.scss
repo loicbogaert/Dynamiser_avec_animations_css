@@ -116,6 +116,7 @@
                     padding-top: 50px;
                     padding-bottom: 20px;
                     padding-left: 22px;
+                    font-size: 22px;
                 }
 }
 
@@ -162,7 +163,7 @@
 .fonctionnement {
     &__title {
         margin-left: 0;
-        width: 210px;
+        width: 195px;
         justify-self: center;
         font-size: 26px;
     }
@@ -188,6 +189,7 @@
             grid-row-end: 2;
             width: 190px;
             justify-self: center;
+            font-size: 26px;
         }
         &__square {
             display: flex;
@@ -227,7 +229,7 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2;
-            width: 130px;
+            width: 150px;
             justify-self: center;
             margin-left: 0;
         }
