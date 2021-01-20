@@ -354,6 +354,23 @@ footer {
   -webkit-box-shadow: 1px 3px 10px 0px rgba(153, 153, 153, 0.75);
   -moz-box-shadow: 1px 3px 10px 0px rgba(143, 143, 143, 0.75);
   box-shadow: 1px 3px 10px 0px rgba(133, 133, 133, 0.75);
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-timing-function: linear;
+  animation-name: sliding-vertically;
+}
+@keyframes sliding-vertically {
+  0% {
+    margin-top: 100px;
+    opacity: 0%;
+  }
+  50% {
+    opacity: 20%;
+  }
+  100% {
+    margin-top: 15px;
+    opacity: 100%;
+  }
 }
 .list__txt {
   display: flex;
@@ -423,7 +440,7 @@ footer {
     margin-bottom: -35px;
   }
   .cartehead__img {
-    height: 400px;
+    height: 300px;
   }
 
   .cartemain__title {
@@ -452,7 +469,7 @@ footer {
     align-self: center;
   }
 
-  /*Fix bug d'élargissement et entrecoupement des divs*/
+  /*Fix bug d'élargissement et entrecoupement des divs + taille header (menus)*/
   /*Bas de page*/
 }
 @media (min-width: 992px) and (min-width: 1070px) {
@@ -464,10 +481,24 @@ footer {
   .list__square {
     max-width: 400px;
   }
+
+  .cartehead {
+    margin-bottom: -35px;
+  }
+  .cartehead__img {
+    height: 350px;
+  }
 }
 @media (min-width: 992px) and (min-width: 1365px) {
   .list__square {
     max-width: 450px;
+  }
+
+  .cartehead {
+    margin-bottom: -35px;
+  }
+  .cartehead__img {
+    height: 400px;
   }
 }
 @media (min-width: 992px) {

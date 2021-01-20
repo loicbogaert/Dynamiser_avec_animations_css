@@ -127,7 +127,28 @@ footer {
         max-width: 600px;
         overflow: hidden;
         @include boxshadow;
+        animation-duration: 1000ms;
+        animation-delay: 0ms;
+        animation-timing-function: linear;
+        animation-name: sliding-vertically;
     }
+
+    @keyframes sliding-vertically {
+        0% {
+            margin-top: 100px;
+            opacity: 0%;
+        }
+
+        50% {
+            opacity: 20%;
+        }
+
+        100% {
+            margin-top: 15px;
+            opacity: 100%;
+        }
+    }
+
         &__txt{
             display: flex;
             flex-direction: column;
@@ -203,7 +224,7 @@ footer {
     .cartehead {
         margin-bottom: -35px;
             &__img {
-                height: 400px;
+                height: 300px;
             }
     }
 
@@ -235,7 +256,7 @@ footer {
         }
     }
 
-    /*Fix bug d'élargissement et entrecoupement des divs*/
+    /*Fix bug d'élargissement et entrecoupement des divs + taille header (menus)*/
 
     @media (min-width: 1070px) {
         .list {
@@ -243,12 +264,19 @@ footer {
                 max-width: 350px;
             }
         }
+
     }
     @media (min-width: 1200px) {
         .list {
             &__square {
                 max-width: 400px;
             }
+        }
+        .cartehead {
+            margin-bottom: -35px;
+                &__img {
+                    height: 350px;
+                }
         }
     }
 
@@ -257,6 +285,12 @@ footer {
             &__square {
                 max-width: 450px;
             }
+        }
+        .cartehead {
+            margin-bottom: -35px;
+                &__img {
+                    height: 400px;
+                }
         }
     }
 
