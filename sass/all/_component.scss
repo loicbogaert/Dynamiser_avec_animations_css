@@ -21,6 +21,10 @@
             font-size: 15px;
             margin-bottom: 50px;
             margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;            
         }
             &__menu {
                 width: 180px;
@@ -30,6 +34,11 @@
                 align-self: center;
                 font-size: 16px;
             }
+}
+
+.btn__link {
+    color: white;
+    display: block;
 }
 
 /*retrait de l'outline*/
