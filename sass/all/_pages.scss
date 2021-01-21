@@ -22,6 +22,7 @@
     color: rgb(71, 71, 71);
     &__icone{
         margin-right: 15px;
+        width: 20px;
         }
         &__text {
         width: 115px;
@@ -144,13 +145,13 @@
 .resto {
     background-image: url(img/restaurant1.jpg);
     &__2 {
-        background-image: url(img/restaurant2.jpg)
+        background-image: url(img/restaurant2.jpg);
     }
     &__3 {
-        background-image: url(img/restaurant3.jpg)
+        background-image: url(img/restaurant3.jpg);
     }
     &__4 {
-        background-image: url(img/restaurant4.jpg)
+        background-image: url(img/restaurant4.jpg);
     }
 }
 
@@ -170,6 +171,7 @@
 }
 
 .logos {
+    width: 20px;
     font-size: 20px;
     margin-right: 40px;
     margin-left: 10px;

@@ -35,8 +35,10 @@ footer {
     }
     &__fas1 {
         margin-right: 13px;
+        width: 20px;
     }
     &__fas2 {
+        width: 20px;
         margin-right: 10px;
         font-size: 13px;
     }
@@ -99,7 +101,7 @@ footer {
             margin-top: 25px;
     }
                 &__icon {
-                  padding-top: 8px;
+                  margin-bottom: 15px;
                 }
                     &__underline {
                     display: block;
