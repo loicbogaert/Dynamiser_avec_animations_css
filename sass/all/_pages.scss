@@ -61,6 +61,7 @@
             &__logo {
                 margin-right: 7%;
                 color: rgb(99, 99, 99);
+                width: 20px;
     }
                 &__pink {
                     color:$violet;
@@ -73,7 +74,7 @@
     width: 38px;
     background-color: $violet;
     color: white;
-    border-radius: 50px;
+    border-radius: 100%;
     align-items: center;
     margin-left: -15px;
     margin-right: 7%;
@@ -112,6 +113,9 @@
                 border-top-right-radius: 20px;
                 display: flex;
                 justify-content: flex-end;
+                    :hover {
+                        transform: scale(1.1);
+                    }
         }
                 &__title {
                     padding-top: 50px;
