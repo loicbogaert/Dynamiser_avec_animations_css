@@ -45,7 +45,7 @@
 /*partie fonctionnement*/
 .fonctionnement {
   display: grid;
-  grid-template-columns: repeat(1, 4);
+  grid-template-columns: repeat(1);
 }
 .fonctionnement__title {
   margin-top: 50px;
@@ -238,12 +238,12 @@
 /*header*/
 .header1 {
   display: grid;
-  grid-template-columns: repeat(1, 5);
+  grid-template-columns: repeat(1);
 }
 
 .heading {
   display: grid;
-  grid-template-columns: repeat(1, 3);
+  grid-template-columns: repeat(1);
 }
 
 /*footer*/
@@ -286,7 +286,7 @@ footer {
 }
 .cartehead__title {
   display: grid;
-  grid-template-columns: repeat(1fr, 2);
+  grid-template-columns: repeat(1);
 }
 .cartehead__logo {
   grid-row-start: 1;
@@ -865,10 +865,10 @@ button:focus {
 }
 
 .dot:nth-child(4) {
-  animation-delay: -0.3;
-  -moz-animation-delay: -0.3;
-  -o-animation-delay: -0.3;
-  -webkit-animation-delay: -0.3;
+  animation-delay: -0.3s;
+  -moz-animation-delay: -0.3s;
+  -o-animation-delay: -0.3s;
+  -webkit-animation-delay: -0.3s;
 }
 
 .dot:nth-child(5) {
