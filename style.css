@@ -45,7 +45,7 @@
 /*partie fonctionnement*/
 .fonctionnement {
   display: grid;
-  grid-template-columns: repeat(1);
+  grid-template-columns: repeat(1fr);
 }
 .fonctionnement__title {
   margin-top: 50px;
@@ -238,12 +238,12 @@
 /*header*/
 .header1 {
   display: grid;
-  grid-template-columns: repeat(1);
+  grid-template-columns: repeat(1fr);
 }
 
 .heading {
   display: grid;
-  grid-template-columns: repeat(1);
+  grid-template-columns: repeat(1fr);
 }
 
 /*footer*/
@@ -286,7 +286,7 @@ footer {
 }
 .cartehead__title {
   display: grid;
-  grid-template-columns: repeat(1);
+  grid-template-columns: repeat(1fr);
 }
 .cartehead__logo {
   grid-row-start: 1;

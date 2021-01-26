@@ -2,12 +2,12 @@
 
 .header1 {
     display: grid;
-    grid-template-columns: repeat(1);
+    grid-template-columns: repeat(1fr);
       }
 
 .heading {
   display: grid;
-  grid-template-columns: repeat(1);
+  grid-template-columns: repeat(1fr);
 }
 
 
@@ -52,7 +52,7 @@ footer {
     margin-bottom: -55px;
     &__title {
         display: grid;
-        grid-template-columns: repeat(1);
+        grid-template-columns: repeat(1fr);
     }
         &__logo {
             grid-row-start: 1;

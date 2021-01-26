@@ -38,7 +38,7 @@
 
 .fonctionnement {
     display: grid;
-    grid-template-columns: repeat(1);
+    grid-template-columns: repeat(1fr);
     &__title {
         margin-top: 50px;
         margin-bottom: 20px;
