@@ -655,8 +655,6 @@ button:focus {
   font-size: 50px;
   position: relative;
   color: white;
-  background-clip: text;
-  -moz-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
