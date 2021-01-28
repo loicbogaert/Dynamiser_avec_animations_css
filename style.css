@@ -827,10 +827,10 @@ button:focus {
   width: 100%;
   height: 100%;
   position: absolute;
-  animation: dotspin 2s infinite ease-in-out 500ms both;
-  -moz-animation: dotspin 2s infinite ease-in-out 500ms both;
-  -o-animation: dotspin 2s infinite ease-in-out 500ms both;
-  -webkit-animation: dotspin 2s infinite ease-in-out 500ms both;
+  animation: spin 2s infinite ease-in-out 500ms both;
+  -moz-animation: spin 2s infinite ease-in-out 500ms both;
+  -o-animation: spin 2s infinite ease-in-out 500ms both;
+  -webkit-animation: spin 2s infinite ease-in-out 500ms both;
   animation-delay: -0.7s;
   -moz-animation-delay: -0.7s;
   -o-animation-delay: -0.7s;
@@ -902,14 +902,6 @@ button:focus {
   }
 }
 @keyframes spin {
-  100% {
-    transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
-}
-@keyframes dotspin {
   100% {
     transform: rotate(360deg);
     -moz-transform: rotate(360deg);
