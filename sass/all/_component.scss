@@ -321,16 +321,16 @@ button:focus {
 @keyframes shrink {
 50% {
    transform: scale(0.5);
-   -moz-transform:rotate(0.5);
-   -webkit-transform:rotate(0.5);
-   -o-transform:rotate(0.5);
+   -moz-transform: scale(0.5);
+   -webkit-transform: scale(0.5);
+   -o-transform: scale(0.5);
 }
 
 100% {
    transform: scale(1);
-   -moz-transform:rotate(1);
-   -webkit-transform:rotate(1);
-   -o-transform:rotate(1);
+   -moz-transform: scale(1);
+   -webkit-transform: scale(1);
+   -o-transform: scale(1);
 }
 }
 
